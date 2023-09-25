@@ -1,0 +1,16 @@
+<div class="flex items-center" style="flex-flow: column">
+  <div>
+    <p><%= @guess.id %></p>
+    <img src={@guess.image} />
+  </div>
+  <div style="flex-flow: row; justify-content: space-between;">
+    <%= if (Enum.random(0..50) > 25) do %>
+      <button id="right" class="spawn"><%= @guess.nationality %></button>
+      <button id="wrong" class="spawn"><%= @guess.wrong_nationality %></button>
+    <% else %>
+      <button id="wrong" class="spawn"><%= @guess.wrong_nationality %></button>
+      <button id="right" class="spawn"><%= @guess.nationality %></button>
+    <% end %>
+  </div>
+  <a class="next" href="../">Next</a>
+</div>

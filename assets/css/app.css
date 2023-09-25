@@ -1,0 +1,28 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+button {
+  padding: 5px;
+  margin: 5px;
+}
+
+button.spawn {
+  background-color: grey;
+}
+
+button.right {
+  background-color: green;
+}
+
+button.wrong {
+  background-color: red;
+}
+
+.next {
+  padding: 5px;
+  margin: 5px;
+  background-color: yellow;
+}
